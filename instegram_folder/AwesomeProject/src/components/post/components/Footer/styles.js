@@ -14,6 +14,16 @@ caption:{
 postedAt:{
     color:'#8c8',
     margin:3,
+},
+IconContainer:{
+    flexDirection:'row',
+    justifyContent:'space-between', padding:5
+}
+,
+leftIcon:{
+    flexDirection: 'row',
+    width: 120,
+    justifyContent: 'space-between'
 }
 
 

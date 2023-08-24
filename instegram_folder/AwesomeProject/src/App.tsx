@@ -20,6 +20,7 @@ import {
 import HomeScreen from './screens/HomeScreen';
 import ProfilePicture from './components/ProfilePicture';
 
+
 function App(): JSX.Element {
   return (
     <SafeAreaView>

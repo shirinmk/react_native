@@ -6,6 +6,7 @@ import Post from "../post";
 import Stories from "../Stories";
 
 const data =  [{
+  id:'1',
     user:{
       imageUri:'https://m.media-amazon.com/images/I/5177-nTvY7L._AC_SX679_.jpg',
       name:'shirin',
@@ -15,6 +16,7 @@ const data =  [{
   likesCount :1234,
   postedAt:'6 minutes ago'
   },{
+    id:'2',
     user:{
       imageUri:'https://m.media-amazon.com/images/I/5177-nTvY7L._AC_SX679_.jpg',
       name:'shirin',
@@ -25,6 +27,7 @@ const data =  [{
   postedAt:'6 minutes ago'
   },
   {
+    id:'3',
     user:{
       imageUri:'https://m.media-amazon.com/images/I/5177-nTvY7L._AC_SX679_.jpg',
       name:'shirin',
@@ -42,6 +45,7 @@ const Feed = () => {
       <FlatList
         data={data}
         renderItem={({ item }) => <Post post={item} />}
+        keyExtractor={({id}) =>id}//get warning for not
         ListHeaderComponent={Stories}
       />
     );
